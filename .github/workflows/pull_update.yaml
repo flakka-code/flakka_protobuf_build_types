@@ -1,0 +1,42 @@
+name: Pull update
+
+on:
+  workflow_call:
+    inputs:
+      commands:
+        required: true
+        type: string
+      branch:
+        required: true
+        type: string
+
+jobs:
+  chore:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v3
+        with:
+          ref: ${{ github.event.inputs.branch }}
+
+      - uses: taiki-e/install-action@just
+      - uses: dart-lang/setup-dart@v1
+      - uses: bufbuild/buf-setup-action@v1.31.0
+      - run: just full
+
+      - name: Commit changes
+        run: |
+          git config --global user.name 'GitHub Actions Bot'
+          git config --global user.email 'actions@github.com'
+          git add .
+          git diff-index --quiet HEAD || git commit -m "chore: automated changes"
+
+      - name: Open pull request
+        uses: repo-sync/pull-request@v2
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          pr_title: "chore: automated changes"
+          pr_body: |
+            This is an automated pull request created by the Chore Workflow.
+          pr_template: "chore.md"
