@@ -1,5 +1,5 @@
 version: v1
-name: buf.build/flakkacode/flakkabuilder
+name: buf.build/flakkacode/flakkabuild
 breaking:
   use:
     - FILE
