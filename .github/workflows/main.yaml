@@ -25,9 +25,6 @@ jobs:
   build:
     uses: VeryGoodOpenSource/very_good_workflows/.github/workflows/dart_package.yml@v1
 
-  build_proto:
-    uses: extractions/setup-just/.github/workflows/build.yaml@v2
-
   just_full:
     runs-on: ubuntu-latest
     steps:
