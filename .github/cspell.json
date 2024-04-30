@@ -20,7 +20,7 @@
   "useGitignore": true,
   "words": [
     "flakka",
-    "flakkabuilder",
+    "flakkabuild",
     "flakkacode",
     "flakka_internal_protobuf_types",
     "protobuf"
