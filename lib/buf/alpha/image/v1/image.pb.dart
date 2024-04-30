@@ -30,23 +30,30 @@ class Image extends $pb.GeneratedMessage {
     return $result;
   }
   Image._() : super();
-  factory Image.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory Image.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory Image.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory Image.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'Image', package: const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'), createEmptyInstance: create)
-    ..pc<ImageFile>(1, _omitFieldNames ? '' : 'file', $pb.PbFieldType.PM, subBuilder: ImageFile.create)
-  ;
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'Image',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'),
+      createEmptyInstance: create)
+    ..pc<ImageFile>(1, _omitFieldNames ? '' : 'file', $pb.PbFieldType.PM,
+        subBuilder: ImageFile.create);
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   Image clone() => Image()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  Image copyWith(void Function(Image) updates) => super.copyWith((message) => updates(message as Image)) as Image;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  Image copyWith(void Function(Image) updates) =>
+      super.copyWith((message) => updates(message as Image)) as Image;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -55,7 +62,8 @@ class Image extends $pb.GeneratedMessage {
   Image createEmptyInstance() => create();
   static $pb.PbList<Image> createRepeated() => $pb.PbList<Image>();
   @$core.pragma('dart2js:noInline')
-  static Image getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Image>(create);
+  static Image getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<Image>(create);
   static Image? _defaultInstance;
 
   @$pb.TagNumber(1)
@@ -132,36 +140,58 @@ class ImageFile extends $pb.GeneratedMessage {
     return $result;
   }
   ImageFile._() : super();
-  factory ImageFile.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImageFile.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImageFile.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImageFile.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageFile', package: const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImageFile',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'name')
     ..aOS(2, _omitFieldNames ? '' : 'package')
     ..pPS(3, _omitFieldNames ? '' : 'dependency')
-    ..pc<$0.DescriptorProto>(4, _omitFieldNames ? '' : 'messageType', $pb.PbFieldType.PM, subBuilder: $0.DescriptorProto.create)
-    ..pc<$0.EnumDescriptorProto>(5, _omitFieldNames ? '' : 'enumType', $pb.PbFieldType.PM, subBuilder: $0.EnumDescriptorProto.create)
-    ..pc<$0.ServiceDescriptorProto>(6, _omitFieldNames ? '' : 'service', $pb.PbFieldType.PM, subBuilder: $0.ServiceDescriptorProto.create)
-    ..pc<$0.FieldDescriptorProto>(7, _omitFieldNames ? '' : 'extension', $pb.PbFieldType.PM, subBuilder: $0.FieldDescriptorProto.create)
-    ..aOM<$0.FileOptions>(8, _omitFieldNames ? '' : 'options', subBuilder: $0.FileOptions.create)
-    ..aOM<$0.SourceCodeInfo>(9, _omitFieldNames ? '' : 'sourceCodeInfo', subBuilder: $0.SourceCodeInfo.create)
-    ..p<$core.int>(10, _omitFieldNames ? '' : 'publicDependency', $pb.PbFieldType.P3)
-    ..p<$core.int>(11, _omitFieldNames ? '' : 'weakDependency', $pb.PbFieldType.P3)
+    ..pc<$0.DescriptorProto>(
+        4, _omitFieldNames ? '' : 'messageType', $pb.PbFieldType.PM,
+        subBuilder: $0.DescriptorProto.create)
+    ..pc<$0.EnumDescriptorProto>(
+        5, _omitFieldNames ? '' : 'enumType', $pb.PbFieldType.PM,
+        subBuilder: $0.EnumDescriptorProto.create)
+    ..pc<$0.ServiceDescriptorProto>(
+        6, _omitFieldNames ? '' : 'service', $pb.PbFieldType.PM,
+        subBuilder: $0.ServiceDescriptorProto.create)
+    ..pc<$0.FieldDescriptorProto>(
+        7, _omitFieldNames ? '' : 'extension', $pb.PbFieldType.PM,
+        subBuilder: $0.FieldDescriptorProto.create)
+    ..aOM<$0.FileOptions>(8, _omitFieldNames ? '' : 'options',
+        subBuilder: $0.FileOptions.create)
+    ..aOM<$0.SourceCodeInfo>(9, _omitFieldNames ? '' : 'sourceCodeInfo',
+        subBuilder: $0.SourceCodeInfo.create)
+    ..p<$core.int>(
+        10, _omitFieldNames ? '' : 'publicDependency', $pb.PbFieldType.P3)
+    ..p<$core.int>(
+        11, _omitFieldNames ? '' : 'weakDependency', $pb.PbFieldType.P3)
     ..aOS(12, _omitFieldNames ? '' : 'syntax')
-    ..e<$0.Edition>(14, _omitFieldNames ? '' : 'edition', $pb.PbFieldType.OE, defaultOrMaker: $0.Edition.EDITION_UNKNOWN, valueOf: $0.Edition.valueOf, enumValues: $0.Edition.values)
-    ..aOM<ImageFileExtension>(8042, _omitFieldNames ? '' : 'bufExtension', subBuilder: ImageFileExtension.create)
-  ;
+    ..e<$0.Edition>(14, _omitFieldNames ? '' : 'edition', $pb.PbFieldType.OE,
+        defaultOrMaker: $0.Edition.EDITION_UNKNOWN,
+        valueOf: $0.Edition.valueOf,
+        enumValues: $0.Edition.values)
+    ..aOM<ImageFileExtension>(8042, _omitFieldNames ? '' : 'bufExtension',
+        subBuilder: ImageFileExtension.create);
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ImageFile clone() => ImageFile()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImageFile copyWith(void Function(ImageFile) updates) => super.copyWith((message) => updates(message as ImageFile)) as ImageFile;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImageFile copyWith(void Function(ImageFile) updates) =>
+      super.copyWith((message) => updates(message as ImageFile)) as ImageFile;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -170,13 +200,17 @@ class ImageFile extends $pb.GeneratedMessage {
   ImageFile createEmptyInstance() => create();
   static $pb.PbList<ImageFile> createRepeated() => $pb.PbList<ImageFile>();
   @$core.pragma('dart2js:noInline')
-  static ImageFile getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageFile>(create);
+  static ImageFile getDefault() =>
+      _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageFile>(create);
   static ImageFile? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get name => $_getSZ(0);
   @$pb.TagNumber(1)
-  set name($core.String v) { $_setString(0, v); }
+  set name($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -185,7 +219,10 @@ class ImageFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get package => $_getSZ(1);
   @$pb.TagNumber(2)
-  set package($core.String v) { $_setString(1, v); }
+  set package($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasPackage() => $_has(1);
   @$pb.TagNumber(2)
@@ -209,7 +246,10 @@ class ImageFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(8)
   $0.FileOptions get options => $_getN(7);
   @$pb.TagNumber(8)
-  set options($0.FileOptions v) { setField(8, v); }
+  set options($0.FileOptions v) {
+    setField(8, v);
+  }
+
   @$pb.TagNumber(8)
   $core.bool hasOptions() => $_has(7);
   @$pb.TagNumber(8)
@@ -220,7 +260,10 @@ class ImageFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(9)
   $0.SourceCodeInfo get sourceCodeInfo => $_getN(8);
   @$pb.TagNumber(9)
-  set sourceCodeInfo($0.SourceCodeInfo v) { setField(9, v); }
+  set sourceCodeInfo($0.SourceCodeInfo v) {
+    setField(9, v);
+  }
+
   @$pb.TagNumber(9)
   $core.bool hasSourceCodeInfo() => $_has(8);
   @$pb.TagNumber(9)
@@ -237,7 +280,10 @@ class ImageFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(12)
   $core.String get syntax => $_getSZ(11);
   @$pb.TagNumber(12)
-  set syntax($core.String v) { $_setString(11, v); }
+  set syntax($core.String v) {
+    $_setString(11, v);
+  }
+
   @$pb.TagNumber(12)
   $core.bool hasSyntax() => $_has(11);
   @$pb.TagNumber(12)
@@ -246,7 +292,10 @@ class ImageFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(14)
   $0.Edition get edition => $_getN(12);
   @$pb.TagNumber(14)
-  set edition($0.Edition v) { setField(14, v); }
+  set edition($0.Edition v) {
+    setField(14, v);
+  }
+
   @$pb.TagNumber(14)
   $core.bool hasEdition() => $_has(12);
   @$pb.TagNumber(14)
@@ -261,7 +310,10 @@ class ImageFile extends $pb.GeneratedMessage {
   @$pb.TagNumber(8042)
   ImageFileExtension get bufExtension => $_getN(13);
   @$pb.TagNumber(8042)
-  set bufExtension(ImageFileExtension v) { setField(8042, v); }
+  set bufExtension(ImageFileExtension v) {
+    setField(8042, v);
+  }
+
   @$pb.TagNumber(8042)
   $core.bool hasBufExtension() => $_has(13);
   @$pb.TagNumber(8042)
@@ -299,36 +351,47 @@ class ImageFileExtension extends $pb.GeneratedMessage {
     return $result;
   }
   ImageFileExtension._() : super();
-  factory ImageFileExtension.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ImageFileExtension.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ImageFileExtension.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ImageFileExtension.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ImageFileExtension', package: const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ImageFileExtension',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'),
+      createEmptyInstance: create)
     ..aOB(1, _omitFieldNames ? '' : 'isImport')
-    ..aOM<ModuleInfo>(2, _omitFieldNames ? '' : 'moduleInfo', subBuilder: ModuleInfo.create)
+    ..aOM<ModuleInfo>(2, _omitFieldNames ? '' : 'moduleInfo',
+        subBuilder: ModuleInfo.create)
     ..aOB(3, _omitFieldNames ? '' : 'isSyntaxUnspecified')
-    ..p<$core.int>(4, _omitFieldNames ? '' : 'unusedDependency', $pb.PbFieldType.P3)
-    ..hasRequiredFields = false
-  ;
+    ..p<$core.int>(
+        4, _omitFieldNames ? '' : 'unusedDependency', $pb.PbFieldType.P3)
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ImageFileExtension clone() => ImageFileExtension()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ImageFileExtension copyWith(void Function(ImageFileExtension) updates) => super.copyWith((message) => updates(message as ImageFileExtension)) as ImageFileExtension;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ImageFileExtension copyWith(void Function(ImageFileExtension) updates) =>
+      super.copyWith((message) => updates(message as ImageFileExtension))
+          as ImageFileExtension;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
   static ImageFileExtension create() => ImageFileExtension._();
   ImageFileExtension createEmptyInstance() => create();
-  static $pb.PbList<ImageFileExtension> createRepeated() => $pb.PbList<ImageFileExtension>();
+  static $pb.PbList<ImageFileExtension> createRepeated() =>
+      $pb.PbList<ImageFileExtension>();
   @$core.pragma('dart2js:noInline')
-  static ImageFileExtension getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ImageFileExtension>(create);
+  static ImageFileExtension getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ImageFileExtension>(create);
   static ImageFileExtension? _defaultInstance;
 
   ///  is_import denotes whether this file is considered an "import".
@@ -346,7 +409,10 @@ class ImageFileExtension extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $core.bool get isImport => $_getBF(0);
   @$pb.TagNumber(1)
-  set isImport($core.bool v) { $_setBool(0, v); }
+  set isImport($core.bool v) {
+    $_setBool(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasIsImport() => $_has(0);
   @$pb.TagNumber(1)
@@ -358,7 +424,10 @@ class ImageFileExtension extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   ModuleInfo get moduleInfo => $_getN(1);
   @$pb.TagNumber(2)
-  set moduleInfo(ModuleInfo v) { setField(2, v); }
+  set moduleInfo(ModuleInfo v) {
+    setField(2, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasModuleInfo() => $_has(1);
   @$pb.TagNumber(2)
@@ -381,7 +450,10 @@ class ImageFileExtension extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.bool get isSyntaxUnspecified => $_getBF(2);
   @$pb.TagNumber(3)
-  set isSyntaxUnspecified($core.bool v) { $_setBool(2, v); }
+  set isSyntaxUnspecified($core.bool v) {
+    $_setBool(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasIsSyntaxUnspecified() => $_has(2);
   @$pb.TagNumber(3)
@@ -413,25 +485,32 @@ class ModuleInfo extends $pb.GeneratedMessage {
     return $result;
   }
   ModuleInfo._() : super();
-  factory ModuleInfo.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ModuleInfo.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ModuleInfo.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ModuleInfo.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModuleInfo', package: const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'), createEmptyInstance: create)
-    ..aOM<ModuleName>(1, _omitFieldNames ? '' : 'name', subBuilder: ModuleName.create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ModuleInfo',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'),
+      createEmptyInstance: create)
+    ..aOM<ModuleName>(1, _omitFieldNames ? '' : 'name',
+        subBuilder: ModuleName.create)
     ..aOS(2, _omitFieldNames ? '' : 'commit')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ModuleInfo clone() => ModuleInfo()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ModuleInfo copyWith(void Function(ModuleInfo) updates) => super.copyWith((message) => updates(message as ModuleInfo)) as ModuleInfo;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ModuleInfo copyWith(void Function(ModuleInfo) updates) =>
+      super.copyWith((message) => updates(message as ModuleInfo)) as ModuleInfo;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -440,7 +519,8 @@ class ModuleInfo extends $pb.GeneratedMessage {
   ModuleInfo createEmptyInstance() => create();
   static $pb.PbList<ModuleInfo> createRepeated() => $pb.PbList<ModuleInfo>();
   @$core.pragma('dart2js:noInline')
-  static ModuleInfo getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ModuleInfo>(create);
+  static ModuleInfo getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ModuleInfo>(create);
   static ModuleInfo? _defaultInstance;
 
   ///  name is the name of the Buf module.
@@ -449,7 +529,10 @@ class ModuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   ModuleName get name => $_getN(0);
   @$pb.TagNumber(1)
-  set name(ModuleName v) { setField(1, v); }
+  set name(ModuleName v) {
+    setField(1, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasName() => $_has(0);
   @$pb.TagNumber(1)
@@ -463,7 +546,10 @@ class ModuleInfo extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get commit => $_getSZ(1);
   @$pb.TagNumber(2)
-  set commit($core.String v) { $_setString(1, v); }
+  set commit($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasCommit() => $_has(1);
   @$pb.TagNumber(2)
@@ -492,26 +578,32 @@ class ModuleName extends $pb.GeneratedMessage {
     return $result;
   }
   ModuleName._() : super();
-  factory ModuleName.fromBuffer($core.List<$core.int> i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromBuffer(i, r);
-  factory ModuleName.fromJson($core.String i, [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) => create()..mergeFromJson(i, r);
+  factory ModuleName.fromBuffer($core.List<$core.int> i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromBuffer(i, r);
+  factory ModuleName.fromJson($core.String i,
+          [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
+      create()..mergeFromJson(i, r);
 
-  static final $pb.BuilderInfo _i = $pb.BuilderInfo(_omitMessageNames ? '' : 'ModuleName', package: const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'), createEmptyInstance: create)
+  static final $pb.BuilderInfo _i = $pb.BuilderInfo(
+      _omitMessageNames ? '' : 'ModuleName',
+      package:
+          const $pb.PackageName(_omitMessageNames ? '' : 'buf.alpha.image.v1'),
+      createEmptyInstance: create)
     ..aOS(1, _omitFieldNames ? '' : 'remote')
     ..aOS(2, _omitFieldNames ? '' : 'owner')
     ..aOS(3, _omitFieldNames ? '' : 'repository')
-    ..hasRequiredFields = false
-  ;
+    ..hasRequiredFields = false;
 
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
-  'Will be removed in next major version')
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
+      'Will be removed in next major version')
   ModuleName clone() => ModuleName()..mergeFromMessage(this);
-  @$core.Deprecated(
-  'Using this can add significant overhead to your binary. '
-  'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
-  'Will be removed in next major version')
-  ModuleName copyWith(void Function(ModuleName) updates) => super.copyWith((message) => updates(message as ModuleName)) as ModuleName;
+  @$core.Deprecated('Using this can add significant overhead to your binary. '
+      'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
+      'Will be removed in next major version')
+  ModuleName copyWith(void Function(ModuleName) updates) =>
+      super.copyWith((message) => updates(message as ModuleName)) as ModuleName;
 
   $pb.BuilderInfo get info_ => _i;
 
@@ -520,13 +612,17 @@ class ModuleName extends $pb.GeneratedMessage {
   ModuleName createEmptyInstance() => create();
   static $pb.PbList<ModuleName> createRepeated() => $pb.PbList<ModuleName>();
   @$core.pragma('dart2js:noInline')
-  static ModuleName getDefault() => _defaultInstance ??= $pb.GeneratedMessage.$_defaultFor<ModuleName>(create);
+  static ModuleName getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<ModuleName>(create);
   static ModuleName? _defaultInstance;
 
   @$pb.TagNumber(1)
   $core.String get remote => $_getSZ(0);
   @$pb.TagNumber(1)
-  set remote($core.String v) { $_setString(0, v); }
+  set remote($core.String v) {
+    $_setString(0, v);
+  }
+
   @$pb.TagNumber(1)
   $core.bool hasRemote() => $_has(0);
   @$pb.TagNumber(1)
@@ -535,7 +631,10 @@ class ModuleName extends $pb.GeneratedMessage {
   @$pb.TagNumber(2)
   $core.String get owner => $_getSZ(1);
   @$pb.TagNumber(2)
-  set owner($core.String v) { $_setString(1, v); }
+  set owner($core.String v) {
+    $_setString(1, v);
+  }
+
   @$pb.TagNumber(2)
   $core.bool hasOwner() => $_has(1);
   @$pb.TagNumber(2)
@@ -544,13 +643,16 @@ class ModuleName extends $pb.GeneratedMessage {
   @$pb.TagNumber(3)
   $core.String get repository => $_getSZ(2);
   @$pb.TagNumber(3)
-  set repository($core.String v) { $_setString(2, v); }
+  set repository($core.String v) {
+    $_setString(2, v);
+  }
+
   @$pb.TagNumber(3)
   $core.bool hasRepository() => $_has(2);
   @$pb.TagNumber(3)
   void clearRepository() => clearField(3);
 }
 
-
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');
-const _omitMessageNames = $core.bool.fromEnvironment('protobuf.omit_message_names');
+const _omitMessageNames =
+    $core.bool.fromEnvironment('protobuf.omit_message_names');

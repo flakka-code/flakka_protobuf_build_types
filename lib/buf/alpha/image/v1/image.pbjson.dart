@@ -17,7 +17,14 @@ import 'dart:typed_data' as $typed_data;
 const Image$json = {
   '1': 'Image',
   '2': [
-    {'1': 'file', '3': 1, '4': 3, '5': 11, '6': '.buf.alpha.image.v1.ImageFile', '10': 'file'},
+    {
+      '1': 'file',
+      '3': 1,
+      '4': 3,
+      '5': 11,
+      '6': '.buf.alpha.image.v1.ImageFile',
+      '10': 'file'
+    },
   ],
 };
 
@@ -33,17 +40,79 @@ const ImageFile$json = {
     {'1': 'name', '3': 1, '4': 1, '5': 9, '10': 'name'},
     {'1': 'package', '3': 2, '4': 1, '5': 9, '10': 'package'},
     {'1': 'dependency', '3': 3, '4': 3, '5': 9, '10': 'dependency'},
-    {'1': 'public_dependency', '3': 10, '4': 3, '5': 5, '10': 'publicDependency'},
+    {
+      '1': 'public_dependency',
+      '3': 10,
+      '4': 3,
+      '5': 5,
+      '10': 'publicDependency'
+    },
     {'1': 'weak_dependency', '3': 11, '4': 3, '5': 5, '10': 'weakDependency'},
-    {'1': 'message_type', '3': 4, '4': 3, '5': 11, '6': '.google.protobuf.DescriptorProto', '10': 'messageType'},
-    {'1': 'enum_type', '3': 5, '4': 3, '5': 11, '6': '.google.protobuf.EnumDescriptorProto', '10': 'enumType'},
-    {'1': 'service', '3': 6, '4': 3, '5': 11, '6': '.google.protobuf.ServiceDescriptorProto', '10': 'service'},
-    {'1': 'extension', '3': 7, '4': 3, '5': 11, '6': '.google.protobuf.FieldDescriptorProto', '10': 'extension'},
-    {'1': 'options', '3': 8, '4': 1, '5': 11, '6': '.google.protobuf.FileOptions', '10': 'options'},
-    {'1': 'source_code_info', '3': 9, '4': 1, '5': 11, '6': '.google.protobuf.SourceCodeInfo', '10': 'sourceCodeInfo'},
+    {
+      '1': 'message_type',
+      '3': 4,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.DescriptorProto',
+      '10': 'messageType'
+    },
+    {
+      '1': 'enum_type',
+      '3': 5,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.EnumDescriptorProto',
+      '10': 'enumType'
+    },
+    {
+      '1': 'service',
+      '3': 6,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.ServiceDescriptorProto',
+      '10': 'service'
+    },
+    {
+      '1': 'extension',
+      '3': 7,
+      '4': 3,
+      '5': 11,
+      '6': '.google.protobuf.FieldDescriptorProto',
+      '10': 'extension'
+    },
+    {
+      '1': 'options',
+      '3': 8,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.FileOptions',
+      '10': 'options'
+    },
+    {
+      '1': 'source_code_info',
+      '3': 9,
+      '4': 1,
+      '5': 11,
+      '6': '.google.protobuf.SourceCodeInfo',
+      '10': 'sourceCodeInfo'
+    },
     {'1': 'syntax', '3': 12, '4': 1, '5': 9, '10': 'syntax'},
-    {'1': 'edition', '3': 14, '4': 1, '5': 14, '6': '.google.protobuf.Edition', '10': 'edition'},
-    {'1': 'buf_extension', '3': 8042, '4': 1, '5': 11, '6': '.buf.alpha.image.v1.ImageFileExtension', '10': 'bufExtension'},
+    {
+      '1': 'edition',
+      '3': 14,
+      '4': 1,
+      '5': 14,
+      '6': '.google.protobuf.Edition',
+      '10': 'edition'
+    },
+    {
+      '1': 'buf_extension',
+      '3': 8042,
+      '4': 1,
+      '5': 11,
+      '6': '.buf.alpha.image.v1.ImageFileExtension',
+      '10': 'bufExtension'
+    },
   ],
 };
 
@@ -69,9 +138,28 @@ const ImageFileExtension$json = {
   '1': 'ImageFileExtension',
   '2': [
     {'1': 'is_import', '3': 1, '4': 1, '5': 8, '10': 'isImport'},
-    {'1': 'module_info', '3': 2, '4': 1, '5': 11, '6': '.buf.alpha.image.v1.ModuleInfo', '10': 'moduleInfo'},
-    {'1': 'is_syntax_unspecified', '3': 3, '4': 1, '5': 8, '10': 'isSyntaxUnspecified'},
-    {'1': 'unused_dependency', '3': 4, '4': 3, '5': 5, '10': 'unusedDependency'},
+    {
+      '1': 'module_info',
+      '3': 2,
+      '4': 1,
+      '5': 11,
+      '6': '.buf.alpha.image.v1.ModuleInfo',
+      '10': 'moduleInfo'
+    },
+    {
+      '1': 'is_syntax_unspecified',
+      '3': 3,
+      '4': 1,
+      '5': 8,
+      '10': 'isSyntaxUnspecified'
+    },
+    {
+      '1': 'unused_dependency',
+      '3': 4,
+      '4': 3,
+      '5': 5,
+      '10': 'unusedDependency'
+    },
   ],
 };
 
@@ -86,7 +174,14 @@ final $typed_data.Uint8List imageFileExtensionDescriptor = $convert.base64Decode
 const ModuleInfo$json = {
   '1': 'ModuleInfo',
   '2': [
-    {'1': 'name', '3': 1, '4': 1, '5': 11, '6': '.buf.alpha.image.v1.ModuleName', '10': 'name'},
+    {
+      '1': 'name',
+      '3': 1,
+      '4': 1,
+      '5': 11,
+      '6': '.buf.alpha.image.v1.ModuleName',
+      '10': 'name'
+    },
     {'1': 'commit', '3': 2, '4': 1, '5': 9, '10': 'commit'},
   ],
 };
@@ -110,4 +205,3 @@ const ModuleName$json = {
 final $typed_data.Uint8List moduleNameDescriptor = $convert.base64Decode(
     'CgpNb2R1bGVOYW1lEhYKBnJlbW90ZRgBIAEoCVIGcmVtb3RlEhQKBW93bmVyGAIgASgJUgVvd2'
     '5lchIeCgpyZXBvc2l0b3J5GAMgASgJUgpyZXBvc2l0b3J5');
-
