@@ -1,6 +1,7 @@
 name: Pull update
 
 on:
+  workflow_dispatch:
   workflow_call:
     inputs:
       commands:
