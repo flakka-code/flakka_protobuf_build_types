@@ -1,0 +1,51 @@
+syntax = 'proto3';
+
+// buf:lint:ignore FILE_SAME_PACKAGE
+package flakka.alpha.v1alpha1;
+
+//
+message FileOptions {
+  // aggregate root build parameters.
+  AggregateRootDescriptor aggregate_root = 1;
+}
+
+//
+message AggregateRootDescriptor {}
+
+//
+message RouteMatch {}
+
+//
+message EntityDescriptor {
+  // A mandatory name for the aggregate root - used for type name generation
+  repeated MutationDescriptor mutation = 3;
+  repeated ProjectionDescriptor projection = 4;
+  repeated StateDescriptor state = 5;
+  repeated ViewStateDescriptor view_state = 6;
+  repeated EventDescriptor event = 7;
+}
+
+//
+message MutationDescriptor {
+  string name = 1;
+}
+
+//
+message ProjectionDescriptor {
+  string name = 1;
+}
+
+//
+message StateDescriptor {
+  string name = 1;
+}
+
+//
+message ViewStateDescriptor {
+  string name = 1;
+}
+
+//
+message EventDescriptor {
+  string name = 1;
+}
