@@ -1,0 +1,19 @@
+name: Trigger Chore Workflow
+
+on:
+  workflow_dispatch:
+
+jobs:
+  trigger-chore:
+    runs-on: ubuntu-latest
+
+    steps:
+      - uses: taiki-e/install-action@just
+      - uses: dart-lang/setup-dart@v1
+      - uses: bufbuild/buf-setup-action@v1.31.0
+      - name: Call Chore Workflow
+        uses: ./.github/workflows/pull_update.yaml
+        with:
+          commands: |
+            just full
+          branch: main

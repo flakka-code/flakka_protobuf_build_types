@@ -20,10 +20,9 @@ jobs:
         with:
           ref: ${{ github.event.inputs.branch }}
 
-      - uses: taiki-e/install-action@just
-      - uses: dart-lang/setup-dart@v1
-      - uses: bufbuild/buf-setup-action@v1.31.0
-      - run: just full
+      - name: Execute commands
+        run: |
+          ${{ github.event.inputs.commands }}
 
       - name: Commit changes
         run: |
