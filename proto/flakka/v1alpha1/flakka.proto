@@ -1,8 +1,0 @@
-syntax = 'proto3';
-package flakka.v1alpha1;
-
-//import 'flakka/alpha/v1alpha2/annotations.proto';
-import 'kalix/annotations.proto';
-import 'google/protobuf/descriptor.proto';
-
-option (kalix.file) = {event_sourced_entity: {}};
