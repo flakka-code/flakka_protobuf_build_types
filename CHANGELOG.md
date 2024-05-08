@@ -1,3 +1,6 @@
+# 0.3.0-alpha.2
+- chore: spelling
+
 # 0.3.0-alpha.1
 - Replace proto module export with git submodule
 
