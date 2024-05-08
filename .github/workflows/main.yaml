@@ -31,6 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Set submodule url
+        run: git submodule set-url -- flakkacode_flakka https://github.com/flakka-code/flakkacode_flakka
       - name: Initialize Submodules
         run: git submodule update --init --recursive
       - uses: taiki-e/install-action@just
