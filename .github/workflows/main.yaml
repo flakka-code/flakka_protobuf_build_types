@@ -31,6 +31,8 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - name: Initialize Submodules
+        run: git submodule update --init --recursive
       - uses: taiki-e/install-action@just
       - uses: dart-lang/setup-dart@v1
       - uses: bufbuild/buf-setup-action@v1.31.0
