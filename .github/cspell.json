@@ -23,6 +23,7 @@
     "flakkabuild",
     "flakkacode",
     "flakka_internal_protobuf_types",
+    "proto",
     "protobuf"
   ]
 }
