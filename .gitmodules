@@ -1,0 +1,3 @@
+[submodule "flakkacode_flakka"]
+	path = flakkacode_flakka
+	url = git@github.com:flakka-code/flakkacode_flakka
