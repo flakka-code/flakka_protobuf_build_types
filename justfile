@@ -11,3 +11,4 @@ clean:
 
 export_proto:
   @buf export buf.build/flakkacode/flakka --output proto
+  @buf export buf.build/bestowcode/kalix --output proto

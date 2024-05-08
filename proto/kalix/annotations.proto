@@ -31,7 +31,7 @@ message FieldOptions {
   bool workflow_key = 3;
 }
 
-message FileOptions {
+message KalixFileOptions {
   // Event sourced entity configuration.
   EventSourcedEntity event_sourced_entity = 1;
   // Value entity configuration.
@@ -97,7 +97,7 @@ extend google.protobuf.FieldOptions {
 }
 
 extend google.protobuf.FileOptions {
-  FileOptions file = 1080;
+  KalixFileOptions file = 1080;
 }
 
 extend google.protobuf.MethodOptions {
