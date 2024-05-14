@@ -35,7 +35,10 @@ jobs:
         shell: bash
         run: pipx install gitman
       - name: Install gitman deps
-        run: ~/.local/bin/gitman install
+        shell: bash
+        run: |
+          pipx ensurepath
+          gitman install
       - uses: taiki-e/install-action@just
       - uses: dart-lang/setup-dart@v1
       - uses: bufbuild/buf-setup-action@v1.31.0
