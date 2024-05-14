@@ -1,0 +1,46 @@
+location: .
+sources:
+  - repo: https://github.com/flakka-code/flakkacode_flakka
+    name: proto/flakkacode_flakka
+    rev: wip/v1alpha2
+    type: git
+#groups:
+#  - name: group_c_d
+#    members:
+#      - c
+#      - d
+#  - name: group_d
+#    members:
+#      - d
+
+default_group: group_d
+#  - repo: ssh://git@github.com/flakka-code/flakka_templates
+#    name: flakka_templates
+#    rev: main
+#    type: git
+#  - repo: ssh://git@github.com/flakka-code/flakka_cli
+#    name: flakka_cli
+#    rev: main
+#    type: git
+#    params:
+#    sparse_paths:
+#      -
+#    links:
+#      -
+#    scripts:
+#      -
+#sources_locked:
+#  - repo: https://github.com/githubtraining/hellogitworld
+#    name: sample_dependency
+#    rev: ebbbf773431ba07510251bb03f9525c7bab2b13a
+#    type: git
+#    params:
+#    sparse_paths:
+#      -
+#    links:
+#      -
+#    scripts:
+#      -
+#default_group: ''
+#groups:
+#  -
