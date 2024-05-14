@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: flakka/build/element/v1alpha1/element_descriptor.proto
+//  source: flakka/build/element/v1alpha1/element.proto
 //
 // @dart = 2.12
 
@@ -15,6 +15,7 @@ import 'package:protobuf/protobuf.dart' as $pb;
 
 import '../../../../buf/alpha/image/v1/image.pb.dart' as $1;
 import '../../../../google/protobuf/descriptor.pb.dart' as $0;
+import '../../spec/v1alpha1/spec.pb.dart' as $2;
 
 /// /
 class ModuleElement extends $pb.GeneratedMessage {
@@ -174,7 +175,7 @@ class EntityElement extends $pb.GeneratedMessage {
   factory EntityElement({
     $1.ImageFile? imageFile,
     MutationElement? mutation,
-    $core.Iterable<EventElement>? event,
+    $core.Iterable<EventElementFile>? event,
   }) {
     final $result = create();
     if (imageFile != null) {
@@ -205,8 +206,9 @@ class EntityElement extends $pb.GeneratedMessage {
         subBuilder: $1.ImageFile.create)
     ..aOM<MutationElement>(2, _omitFieldNames ? '' : 'mutation',
         subBuilder: MutationElement.create)
-    ..pc<EventElement>(4, _omitFieldNames ? '' : 'event', $pb.PbFieldType.PM,
-        subBuilder: EventElement.create);
+    ..pc<EventElementFile>(
+        4, _omitFieldNames ? '' : 'event', $pb.PbFieldType.PM,
+        subBuilder: EventElementFile.create);
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
       'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
@@ -264,7 +266,7 @@ class EntityElement extends $pb.GeneratedMessage {
   /// ///
   /// ProjectionDescriptor projection = 3;
   @$pb.TagNumber(4)
-  $core.List<EventElement> get event => $_getList(2);
+  $core.List<EventElementFile> get event => $_getList(2);
 }
 
 /// /
@@ -677,62 +679,67 @@ class StateElement extends $pb.GeneratedMessage {
   $core.List<$1.ImageFile> get imageFile => $_getList(1);
 }
 
-class EventEnvelopeElement extends $pb.GeneratedMessage {
-  factory EventEnvelopeElement({
+class EventEnvelopeFile extends $pb.GeneratedMessage {
+  factory EventEnvelopeFile({
     $1.ImageFile? imageFile,
-    EventElement? eventDescriptor,
+    $core.String? partOf,
+    $2.EventEnvelopeFileSpec? spec,
   }) {
     final $result = create();
     if (imageFile != null) {
       $result.imageFile = imageFile;
     }
-    if (eventDescriptor != null) {
-      $result.eventDescriptor = eventDescriptor;
+    if (partOf != null) {
+      $result.partOf = partOf;
+    }
+    if (spec != null) {
+      $result.spec = spec;
     }
     return $result;
   }
-  EventEnvelopeElement._() : super();
-  factory EventEnvelopeElement.fromBuffer($core.List<$core.int> i,
+  EventEnvelopeFile._() : super();
+  factory EventEnvelopeFile.fromBuffer($core.List<$core.int> i,
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromBuffer(i, r);
-  factory EventEnvelopeElement.fromJson($core.String i,
+  factory EventEnvelopeFile.fromJson($core.String i,
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'EventEnvelopeElement',
+      _omitMessageNames ? '' : 'EventEnvelopeFile',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'flakka.build.element.v1alpha1'),
       createEmptyInstance: create)
     ..aOM<$1.ImageFile>(1, _omitFieldNames ? '' : 'imageFile',
         subBuilder: $1.ImageFile.create)
-    ..aOM<EventElement>(2, _omitFieldNames ? '' : 'eventDescriptor',
-        subBuilder: EventElement.create);
+    ..aOS(2, _omitFieldNames ? '' : 'partOf')
+    ..aOM<$2.EventEnvelopeFileSpec>(3, _omitFieldNames ? '' : 'spec',
+        subBuilder: $2.EventEnvelopeFileSpec.create);
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
       'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
       'Will be removed in next major version')
-  EventEnvelopeElement clone() =>
-      EventEnvelopeElement()..mergeFromMessage(this);
+  EventEnvelopeFile clone() => EventEnvelopeFile()..mergeFromMessage(this);
   @$core.Deprecated('Using this can add significant overhead to your binary. '
       'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
       'Will be removed in next major version')
-  EventEnvelopeElement copyWith(void Function(EventEnvelopeElement) updates) =>
-      super.copyWith((message) => updates(message as EventEnvelopeElement))
-          as EventEnvelopeElement;
+  EventEnvelopeFile copyWith(void Function(EventEnvelopeFile) updates) =>
+      super.copyWith((message) => updates(message as EventEnvelopeFile))
+          as EventEnvelopeFile;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EventEnvelopeElement create() => EventEnvelopeElement._();
-  EventEnvelopeElement createEmptyInstance() => create();
-  static $pb.PbList<EventEnvelopeElement> createRepeated() =>
-      $pb.PbList<EventEnvelopeElement>();
+  static EventEnvelopeFile create() => EventEnvelopeFile._();
+  EventEnvelopeFile createEmptyInstance() => create();
+  static $pb.PbList<EventEnvelopeFile> createRepeated() =>
+      $pb.PbList<EventEnvelopeFile>();
   @$core.pragma('dart2js:noInline')
-  static EventEnvelopeElement getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<EventEnvelopeElement>(create);
-  static EventEnvelopeElement? _defaultInstance;
+  static EventEnvelopeFile getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EventEnvelopeFile>(create);
+  static EventEnvelopeFile? _defaultInstance;
 
+  /// The image file for this element
   @$pb.TagNumber(1)
   $1.ImageFile get imageFile => $_getN(0);
   @$pb.TagNumber(1)
@@ -747,77 +754,96 @@ class EventEnvelopeElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $1.ImageFile ensureImageFile() => $_ensure(0);
 
+  /// Back-reference to the package-name of the entity this event belongs to
   @$pb.TagNumber(2)
-  EventElement get eventDescriptor => $_getN(1);
+  $core.String get partOf => $_getSZ(1);
   @$pb.TagNumber(2)
-  set eventDescriptor(EventElement v) {
-    setField(2, v);
+  set partOf($core.String v) {
+    $_setString(1, v);
   }
 
   @$pb.TagNumber(2)
-  $core.bool hasEventDescriptor() => $_has(1);
+  $core.bool hasPartOf() => $_has(1);
   @$pb.TagNumber(2)
-  void clearEventDescriptor() => clearField(2);
-  @$pb.TagNumber(2)
-  EventElement ensureEventDescriptor() => $_ensure(1);
+  void clearPartOf() => clearField(2);
+
+  /// spec for this event envelope
+  @$pb.TagNumber(3)
+  $2.EventEnvelopeFileSpec get spec => $_getN(2);
+  @$pb.TagNumber(3)
+  set spec($2.EventEnvelopeFileSpec v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasSpec() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearSpec() => clearField(3);
+  @$pb.TagNumber(3)
+  $2.EventEnvelopeFileSpec ensureSpec() => $_ensure(2);
 }
 
-class EventElement extends $pb.GeneratedMessage {
-  factory EventElement({
+class EventElementFile extends $pb.GeneratedMessage {
+  factory EventElementFile({
     $1.ImageFile? imageFile,
-    $0.DescriptorProto? messageDescriptorProto,
+    $core.String? partOf,
+    $0.DescriptorProto? descriptor,
   }) {
     final $result = create();
     if (imageFile != null) {
       $result.imageFile = imageFile;
     }
-    if (messageDescriptorProto != null) {
-      $result.messageDescriptorProto = messageDescriptorProto;
+    if (partOf != null) {
+      $result.partOf = partOf;
+    }
+    if (descriptor != null) {
+      $result.descriptor = descriptor;
     }
     return $result;
   }
-  EventElement._() : super();
-  factory EventElement.fromBuffer($core.List<$core.int> i,
+  EventElementFile._() : super();
+  factory EventElementFile.fromBuffer($core.List<$core.int> i,
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromBuffer(i, r);
-  factory EventElement.fromJson($core.String i,
+  factory EventElementFile.fromJson($core.String i,
           [$pb.ExtensionRegistry r = $pb.ExtensionRegistry.EMPTY]) =>
       create()..mergeFromJson(i, r);
 
   static final $pb.BuilderInfo _i = $pb.BuilderInfo(
-      _omitMessageNames ? '' : 'EventElement',
+      _omitMessageNames ? '' : 'EventElementFile',
       package: const $pb.PackageName(
           _omitMessageNames ? '' : 'flakka.build.element.v1alpha1'),
       createEmptyInstance: create)
     ..aOM<$1.ImageFile>(1, _omitFieldNames ? '' : 'imageFile',
         subBuilder: $1.ImageFile.create)
-    ..aOM<$0.DescriptorProto>(
-        2, _omitFieldNames ? '' : 'messageDescriptorProto',
+    ..aOS(2, _omitFieldNames ? '' : 'partOf')
+    ..aOM<$0.DescriptorProto>(3, _omitFieldNames ? '' : 'descriptor',
         subBuilder: $0.DescriptorProto.create);
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
       'Use [GeneratedMessageGenericExtensions.deepCopy] instead. '
       'Will be removed in next major version')
-  EventElement clone() => EventElement()..mergeFromMessage(this);
+  EventElementFile clone() => EventElementFile()..mergeFromMessage(this);
   @$core.Deprecated('Using this can add significant overhead to your binary. '
       'Use [GeneratedMessageGenericExtensions.rebuild] instead. '
       'Will be removed in next major version')
-  EventElement copyWith(void Function(EventElement) updates) =>
-      super.copyWith((message) => updates(message as EventElement))
-          as EventElement;
+  EventElementFile copyWith(void Function(EventElementFile) updates) =>
+      super.copyWith((message) => updates(message as EventElementFile))
+          as EventElementFile;
 
   $pb.BuilderInfo get info_ => _i;
 
   @$core.pragma('dart2js:noInline')
-  static EventElement create() => EventElement._();
-  EventElement createEmptyInstance() => create();
-  static $pb.PbList<EventElement> createRepeated() =>
-      $pb.PbList<EventElement>();
+  static EventElementFile create() => EventElementFile._();
+  EventElementFile createEmptyInstance() => create();
+  static $pb.PbList<EventElementFile> createRepeated() =>
+      $pb.PbList<EventElementFile>();
   @$core.pragma('dart2js:noInline')
-  static EventElement getDefault() => _defaultInstance ??=
-      $pb.GeneratedMessage.$_defaultFor<EventElement>(create);
-  static EventElement? _defaultInstance;
+  static EventElementFile getDefault() => _defaultInstance ??=
+      $pb.GeneratedMessage.$_defaultFor<EventElementFile>(create);
+  static EventElementFile? _defaultInstance;
 
+  /// The image file for this element
   @$pb.TagNumber(1)
   $1.ImageFile get imageFile => $_getN(0);
   @$pb.TagNumber(1)
@@ -832,19 +858,33 @@ class EventElement extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   $1.ImageFile ensureImageFile() => $_ensure(0);
 
+  /// the package-name of the entity this event belongs to
   @$pb.TagNumber(2)
-  $0.DescriptorProto get messageDescriptorProto => $_getN(1);
+  $core.String get partOf => $_getSZ(1);
   @$pb.TagNumber(2)
-  set messageDescriptorProto($0.DescriptorProto v) {
-    setField(2, v);
+  set partOf($core.String v) {
+    $_setString(1, v);
   }
 
   @$pb.TagNumber(2)
-  $core.bool hasMessageDescriptorProto() => $_has(1);
+  $core.bool hasPartOf() => $_has(1);
   @$pb.TagNumber(2)
-  void clearMessageDescriptorProto() => clearField(2);
-  @$pb.TagNumber(2)
-  $0.DescriptorProto ensureMessageDescriptorProto() => $_ensure(1);
+  void clearPartOf() => clearField(2);
+
+  /// the primary (only?) message for this file
+  @$pb.TagNumber(3)
+  $0.DescriptorProto get descriptor => $_getN(2);
+  @$pb.TagNumber(3)
+  set descriptor($0.DescriptorProto v) {
+    setField(3, v);
+  }
+
+  @$pb.TagNumber(3)
+  $core.bool hasDescriptor() => $_has(2);
+  @$pb.TagNumber(3)
+  void clearDescriptor() => clearField(3);
+  @$pb.TagNumber(3)
+  $0.DescriptorProto ensureDescriptor() => $_ensure(2);
 }
 
 const _omitFieldNames = $core.bool.fromEnvironment('protobuf.omit_field_names');

@@ -13,7 +13,7 @@ import 'dart:core' as $core;
 
 import 'package:protobuf/protobuf.dart' as $pb;
 
-import 'component.pb.dart' as $2;
+import 'component.pb.dart' as $3;
 
 class FieldOptions extends $pb.GeneratedMessage {
   factory FieldOptions({
@@ -82,9 +82,9 @@ class FieldOptions extends $pb.GeneratedMessage {
 
 class FileOptions extends $pb.GeneratedMessage {
   factory FileOptions({
-    $2.EventSourcedEntity? eventSourcedEntity,
-    $2.EntityMutation? mutation,
-    $2.EntityState? state,
+    $3.EventSourcedEntity? eventSourcedEntity,
+    $3.EntityMutation? mutation,
+    $3.EntityState? state,
   }) {
     final $result = create();
     if (eventSourcedEntity != null) {
@@ -111,12 +111,12 @@ class FileOptions extends $pb.GeneratedMessage {
       package:
           const $pb.PackageName(_omitMessageNames ? '' : 'flakka.v1alpha1'),
       createEmptyInstance: create)
-    ..aOM<$2.EventSourcedEntity>(1, _omitFieldNames ? '' : 'eventSourcedEntity',
-        subBuilder: $2.EventSourcedEntity.create)
-    ..aOM<$2.EntityMutation>(4, _omitFieldNames ? '' : 'mutation',
-        subBuilder: $2.EntityMutation.create)
-    ..aOM<$2.EntityState>(5, _omitFieldNames ? '' : 'state',
-        subBuilder: $2.EntityState.create)
+    ..aOM<$3.EventSourcedEntity>(1, _omitFieldNames ? '' : 'eventSourcedEntity',
+        subBuilder: $3.EventSourcedEntity.create)
+    ..aOM<$3.EntityMutation>(4, _omitFieldNames ? '' : 'mutation',
+        subBuilder: $3.EntityMutation.create)
+    ..aOM<$3.EntityState>(5, _omitFieldNames ? '' : 'state',
+        subBuilder: $3.EntityState.create)
     ..hasRequiredFields = false;
 
   @$core.Deprecated('Using this can add significant overhead to your binary. '
@@ -143,9 +143,9 @@ class FileOptions extends $pb.GeneratedMessage {
 
   /// Event sourced entity configuration.
   @$pb.TagNumber(1)
-  $2.EventSourcedEntity get eventSourcedEntity => $_getN(0);
+  $3.EventSourcedEntity get eventSourcedEntity => $_getN(0);
   @$pb.TagNumber(1)
-  set eventSourcedEntity($2.EventSourcedEntity v) {
+  set eventSourcedEntity($3.EventSourcedEntity v) {
     setField(1, v);
   }
 
@@ -154,7 +154,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(1)
   void clearEventSourcedEntity() => clearField(1);
   @$pb.TagNumber(1)
-  $2.EventSourcedEntity ensureEventSourcedEntity() => $_ensure(0);
+  $3.EventSourcedEntity ensureEventSourcedEntity() => $_ensure(0);
 
   ///   // Value entity configuration.
   ///   ValueEntity value_entity = 2;
@@ -162,9 +162,9 @@ class FileOptions extends $pb.GeneratedMessage {
   ///   ReplicatedEntity replicated_entity = 3;
   ///  Event sourced entity configuration.
   @$pb.TagNumber(4)
-  $2.EntityMutation get mutation => $_getN(1);
+  $3.EntityMutation get mutation => $_getN(1);
   @$pb.TagNumber(4)
-  set mutation($2.EntityMutation v) {
+  set mutation($3.EntityMutation v) {
     setField(4, v);
   }
 
@@ -173,12 +173,12 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(4)
   void clearMutation() => clearField(4);
   @$pb.TagNumber(4)
-  $2.EntityMutation ensureMutation() => $_ensure(1);
+  $3.EntityMutation ensureMutation() => $_ensure(1);
 
   @$pb.TagNumber(5)
-  $2.EntityState get state => $_getN(2);
+  $3.EntityState get state => $_getN(2);
   @$pb.TagNumber(5)
-  set state($2.EntityState v) {
+  set state($3.EntityState v) {
     setField(5, v);
   }
 
@@ -187,7 +187,7 @@ class FileOptions extends $pb.GeneratedMessage {
   @$pb.TagNumber(5)
   void clearState() => clearField(5);
   @$pb.TagNumber(5)
-  $2.EntityState ensureState() => $_ensure(2);
+  $3.EntityState ensureState() => $_ensure(2);
 }
 
 class Annotations {
@@ -198,16 +198,8 @@ class Annotations {
       $pb.PbFieldType.OM,
       defaultOrMaker: FieldOptions.getDefault,
       subBuilder: FieldOptions.create);
-  static final file = $pb.Extension<FileOptions>(
-      _omitMessageNames ? '' : 'google.protobuf.FileOptions',
-      _omitFieldNames ? '' : 'file',
-      1080,
-      $pb.PbFieldType.OM,
-      defaultOrMaker: FileOptions.getDefault,
-      subBuilder: FileOptions.create);
   static void registerAllExtensions($pb.ExtensionRegistry registry) {
     registry.add(field_1080);
-    registry.add(file);
   }
 }
 

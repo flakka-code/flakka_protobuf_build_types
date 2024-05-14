@@ -1,0 +1,4 @@
+[tool.pipx-install]
+gitman = "~=3.4a"
+#poetry = "==1.7.1"
+#tox = "~=4.11.4"
