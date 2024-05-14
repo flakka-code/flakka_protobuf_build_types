@@ -13,7 +13,7 @@ sources:
 #    members:
 #      - d
 
-default_group: group_d
+#default_group: group_d
 #  - repo: ssh://git@github.com/flakka-code/flakka_templates
 #    name: flakka_templates
 #    rev: main
