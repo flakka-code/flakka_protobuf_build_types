@@ -1,3 +1,9 @@
+## 0.4.0-alpha.2
+
+ - **REFACTOR**: build config (#2).
+ - **REFACTOR**: build config (#1).
+ - **FEAT**: add flakkacode_flakka as submodule (#6).
+
 # 0.4.0-alpha.1
 - breaking: flakkacode_flakka refactor
 
