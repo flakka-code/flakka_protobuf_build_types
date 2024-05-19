@@ -6,7 +6,7 @@ build:
 full: clean vendor build
 
 clean:
-  rm -rf lib
+  cd lib && rm -rf buf flakka google
   rm -rf "proto/vendor/*/**"
 
 vendor:
