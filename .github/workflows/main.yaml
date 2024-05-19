@@ -31,10 +31,14 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
-      - name: Set submodule url
-        run: git submodule set-url -- flakkacode_flakka https://github.com/flakka-code/flakkacode_flakka
-      - name: Initialize Submodules
-        run: git submodule update --init --recursive
+      - name: Install gitman
+        shell: bash
+        run: pipx install gitman
+      - name: Install gitman deps
+        shell: bash
+        run: |
+          pipx ensurepath
+          gitman install
       - uses: taiki-e/install-action@just
       - uses: dart-lang/setup-dart@v1
       - uses: bufbuild/buf-setup-action@v1.31.0

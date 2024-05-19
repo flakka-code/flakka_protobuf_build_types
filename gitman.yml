@@ -1,0 +1,7 @@
+location: .
+sources:
+  - repo: https://github.com/flakka-code/flakkacode_flakka
+    name: proto/flakkacode_flakka
+#    rev: wip/v1alpha2
+    rev: wip/v1alpha2
+    type: git
