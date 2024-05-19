@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: flakka/build/element/v1alpha1/element_descriptor.proto
+//  source: flakka/build/element/v1alpha1/element.proto
 //
 // @dart = 2.12
 
@@ -96,7 +96,7 @@ const EntityElement$json = {
       '3': 4,
       '4': 3,
       '5': 11,
-      '6': '.flakka.build.element.v1alpha1.EventElement',
+      '6': '.flakka.build.element.v1alpha1.EventElementFile',
       '10': 'event'
     },
   ],
@@ -106,8 +106,9 @@ const EntityElement$json = {
 final $typed_data.Uint8List entityElementDescriptor = $convert.base64Decode(
     'Cg1FbnRpdHlFbGVtZW50EjwKCmltYWdlX2ZpbGUYASABKAsyHS5idWYuYWxwaGEuaW1hZ2Uudj'
     'EuSW1hZ2VGaWxlUglpbWFnZUZpbGUSSgoIbXV0YXRpb24YAiABKAsyLi5mbGFra2EuYnVpbGQu'
-    'ZWxlbWVudC52MWFscGhhMS5NdXRhdGlvbkVsZW1lbnRSCG11dGF0aW9uEkEKBWV2ZW50GAQgAy'
-    'gLMisuZmxha2thLmJ1aWxkLmVsZW1lbnQudjFhbHBoYTEuRXZlbnRFbGVtZW50UgVldmVudA==');
+    'ZWxlbWVudC52MWFscGhhMS5NdXRhdGlvbkVsZW1lbnRSCG11dGF0aW9uEkUKBWV2ZW50GAQgAy'
+    'gLMi8uZmxha2thLmJ1aWxkLmVsZW1lbnQudjFhbHBoYTEuRXZlbnRFbGVtZW50RmlsZVIFZXZl'
+    'bnQ=');
 
 @$core.Deprecated('Use mutationElementDescriptor instead')
 const MutationElement$json = {
@@ -256,9 +257,9 @@ final $typed_data.Uint8List stateElementDescriptor = $convert.base64Decode(
     'bWFnZV9maWxlGAIgAygLMh0uYnVmLmFscGhhLmltYWdlLnYxLkltYWdlRmlsZVIJaW1hZ2VGaW'
     'xl');
 
-@$core.Deprecated('Use eventEnvelopeElementDescriptor instead')
-const EventEnvelopeElement$json = {
-  '1': 'EventEnvelopeElement',
+@$core.Deprecated('Use eventEnvelopeFileDescriptor instead')
+const EventEnvelopeFile$json = {
+  '1': 'EventEnvelopeFile',
   '2': [
     {
       '1': 'image_file',
@@ -268,27 +269,28 @@ const EventEnvelopeElement$json = {
       '6': '.buf.alpha.image.v1.ImageFile',
       '10': 'imageFile'
     },
+    {'1': 'part_of', '3': 2, '4': 1, '5': 9, '10': 'partOf'},
     {
-      '1': 'event_descriptor',
-      '3': 2,
+      '1': 'spec',
+      '3': 3,
       '4': 1,
       '5': 11,
-      '6': '.flakka.build.element.v1alpha1.EventElement',
-      '10': 'eventDescriptor'
+      '6': '.flakka.build.spec.v1alpha1.EventEnvelopeFileSpec',
+      '10': 'spec'
     },
   ],
 };
 
-/// Descriptor for `EventEnvelopeElement`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List eventEnvelopeElementDescriptor = $convert.base64Decode(
-    'ChRFdmVudEVudmVsb3BlRWxlbWVudBI8CgppbWFnZV9maWxlGAEgASgLMh0uYnVmLmFscGhhLm'
-    'ltYWdlLnYxLkltYWdlRmlsZVIJaW1hZ2VGaWxlElYKEGV2ZW50X2Rlc2NyaXB0b3IYAiABKAsy'
-    'Ky5mbGFra2EuYnVpbGQuZWxlbWVudC52MWFscGhhMS5FdmVudEVsZW1lbnRSD2V2ZW50RGVzY3'
-    'JpcHRvcg==');
+/// Descriptor for `EventEnvelopeFile`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventEnvelopeFileDescriptor = $convert.base64Decode(
+    'ChFFdmVudEVudmVsb3BlRmlsZRI8CgppbWFnZV9maWxlGAEgASgLMh0uYnVmLmFscGhhLmltYW'
+    'dlLnYxLkltYWdlRmlsZVIJaW1hZ2VGaWxlEhcKB3BhcnRfb2YYAiABKAlSBnBhcnRPZhJFCgRz'
+    'cGVjGAMgASgLMjEuZmxha2thLmJ1aWxkLnNwZWMudjFhbHBoYTEuRXZlbnRFbnZlbG9wZUZpbG'
+    'VTcGVjUgRzcGVj');
 
-@$core.Deprecated('Use eventElementDescriptor instead')
-const EventElement$json = {
-  '1': 'EventElement',
+@$core.Deprecated('Use eventElementFileDescriptor instead')
+const EventElementFile$json = {
+  '1': 'EventElementFile',
   '2': [
     {
       '1': 'image_file',
@@ -298,20 +300,21 @@ const EventElement$json = {
       '6': '.buf.alpha.image.v1.ImageFile',
       '10': 'imageFile'
     },
+    {'1': 'part_of', '3': 2, '4': 1, '5': 9, '10': 'partOf'},
     {
-      '1': 'message_descriptor_proto',
-      '3': 2,
+      '1': 'descriptor',
+      '3': 3,
       '4': 1,
       '5': 11,
       '6': '.google.protobuf.DescriptorProto',
-      '10': 'messageDescriptorProto'
+      '10': 'descriptor'
     },
   ],
 };
 
-/// Descriptor for `EventElement`. Decode as a `google.protobuf.DescriptorProto`.
-final $typed_data.Uint8List eventElementDescriptor = $convert.base64Decode(
-    'CgxFdmVudEVsZW1lbnQSPAoKaW1hZ2VfZmlsZRgBIAEoCzIdLmJ1Zi5hbHBoYS5pbWFnZS52MS'
-    '5JbWFnZUZpbGVSCWltYWdlRmlsZRJaChhtZXNzYWdlX2Rlc2NyaXB0b3JfcHJvdG8YAiABKAsy'
-    'IC5nb29nbGUucHJvdG9idWYuRGVzY3JpcHRvclByb3RvUhZtZXNzYWdlRGVzY3JpcHRvclByb3'
-    'Rv');
+/// Descriptor for `EventElementFile`. Decode as a `google.protobuf.DescriptorProto`.
+final $typed_data.Uint8List eventElementFileDescriptor = $convert.base64Decode(
+    'ChBFdmVudEVsZW1lbnRGaWxlEjwKCmltYWdlX2ZpbGUYASABKAsyHS5idWYuYWxwaGEuaW1hZ2'
+    'UudjEuSW1hZ2VGaWxlUglpbWFnZUZpbGUSFwoHcGFydF9vZhgCIAEoCVIGcGFydE9mEkAKCmRl'
+    'c2NyaXB0b3IYAyABKAsyIC5nb29nbGUucHJvdG9idWYuRGVzY3JpcHRvclByb3RvUgpkZXNjcm'
+    'lwdG9y');

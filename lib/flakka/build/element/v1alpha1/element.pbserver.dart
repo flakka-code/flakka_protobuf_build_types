@@ -1,6 +1,6 @@
 //
 //  Generated code. Do not modify.
-//  source: flakka/build/fixture/v1alpha1/fixture.proto
+//  source: flakka/build/element/v1alpha1/element.proto
 //
 // @dart = 2.12
 
@@ -10,4 +10,4 @@
 // ignore_for_file: non_constant_identifier_names, prefer_final_fields
 // ignore_for_file: unnecessary_import, unnecessary_this, unused_import
 
-export 'fixture.pb.dart';
+export 'element.pb.dart';
