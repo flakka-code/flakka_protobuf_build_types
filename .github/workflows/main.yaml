@@ -37,7 +37,7 @@ jobs:
         run: git submodule update --init --recursive
       - uses: taiki-e/install-action@just
       - uses: dart-lang/setup-dart@v1
-      - uses: bufbuild/buf-setup-action@v1.31.0
+      - uses: bufbuild/buf-setup-action@v1.32.1
       - run: just full
       - name: Check for Uncommitted Changes
         run: git diff --exit-code . ':(exclude).gitmodules'
